@@ -32,6 +32,14 @@ persist.demo.hdmirotationlock=false
 sdm.debug.disable_skip_validate=1
 debug.sf.disable_backpressure=1
 
+# ART
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=8
+
 # Volume
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
