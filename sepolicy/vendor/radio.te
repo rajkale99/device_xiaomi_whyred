@@ -1,1 +1,3 @@
+#============= radio ==============
 dontaudit rild vendor_file:file ioctl;
+allow radio vendor_file:file read;
