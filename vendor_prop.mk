@@ -73,7 +73,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee \
-    persist.vendor.bt.enable.splita2dp=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 
 # Dalvik
@@ -110,7 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # OpenGL version
 PRODUCT_PROPERTY_OVERRIDES += \
-     ro.opengles.version=196610
+    ro.opengles.version=196610
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
