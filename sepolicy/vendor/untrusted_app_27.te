@@ -1,3 +1,4 @@
 #============= untrusted_app_27 ==============
-allow untrusted_app_27 proc_zoneinfo:file read;
+allow untrusted_app_27 proc:file { getattr };
+allow untrusted_app_27 proc_zoneinfo:file { getattr open read};
 allow untrusted_app_27 rootfs:dir read;
