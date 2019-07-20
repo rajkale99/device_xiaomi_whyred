@@ -1,8 +1,5 @@
 #============= vendor_init ==============
-allow vendor_init media_rw_data_file:dir setattr;
-allow vendor_init system_data_file:dir { setattr write };
 allow vendor_init system_file:dir read;
-allow vendor_init tombstone_data_file:dir search;
 allow vendor_init rootfs:dir { add_name create setattr write };
 allow vendor_init persist_debug_prop:property_service set;
 allow vendor_init persist_dpm_prop:property_service set;
