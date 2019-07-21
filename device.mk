@@ -31,8 +31,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := \
+#    framework-res
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
+
+# OTA
+PRODUCT_PACKAGES += \
+    Updates
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -309,6 +313,16 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net \
     netutils-wrapper-1.0
+
+# Hostapd
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/wifi/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    $(LOCAL_PATH)/wifi/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
+
+PRODUCT_PACKAGES += \
+    move_wifi_data.sh
+
 
 # OMX
 PRODUCT_PACKAGES += \

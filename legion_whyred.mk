@@ -28,9 +28,9 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 # Inherit some common LineageOSstuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/legion/config/common.mk)
 
-PRODUCT_NAME := lineage_whyred
+PRODUCT_NAME := legion_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -46,3 +46,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/V10.3.1.0.PEIMIXM:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
+CPU_MODEL := Snapdragon_636
+LEGION_MAINTAINER := THE_GREAT_ONE
+LEGION_BUILD_TYPE := OFFICIAL
